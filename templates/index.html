@@ -18,7 +18,7 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:200,400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet/less" type="text/css" href="less/agency.less" />
+    <link rel="stylesheet/less" type="text/css" href="{{ url_for('static', filename='less/agency.less') }}" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.4/less.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <!-- Custom CSS -->
@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img class="pl-logo" src="img/pl-logo.png">Pure Labs</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img class="pl-logo" src="{{ url_for('static', filename='img/pl-logo.png') }}">Pure Labs</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -149,7 +149,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cutterslounge-website.png" class="img-responsive" alt="">
+                        <img src="{{ url_for('static', filename='img/portfolio/cutterslounge-website.png') }}" class="img-responsive" >
                     </a>
                     <div class="portfolio-caption">
                         <h4>Cutters Lounge Product Website</h4>
@@ -163,7 +163,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cutterslounge-mobile.png" class="img-responsive" alt="">
+                        <img src="{{ url_for('static', filename='img/portfolio/cutterslounge-mobile.png') }}" class="img-responsive" >
                     </a>
                     <div class="portfolio-caption">
                         <h4>Cutters Lounge Mobile Web App</h4>
@@ -177,7 +177,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cutterslounge-app.png" class="img-responsive" alt="">
+                        <img src="{{ url_for('static', filename='img/portfolio/cutterslounge-app.png') }}" class="img-responsive" >
                     </a>
                     <div class="portfolio-caption">
                         <h4>Cutters Lounge Web App </h4>
@@ -287,7 +287,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/dana-nedamaldeen.jpg" class="img-responsive img-circle" alt="">
+                        <img src="{{ url_for('static', filename='img/team/dana-nedamaldeen.jpg') }}" class="img-responsive img-circle" >
                         <h4>Dana Nedamaldeen</h4>
                         <p class="text-muted">Co-Founder, Head of Design</p>
                         <ul class="list-inline social-buttons">
@@ -302,7 +302,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/sebastian-slomski.jpg" class="img-responsive img-circle" alt="">
+                        <img src="{{ url_for('static', filename='img/team/sebastian-slomski.jpg') }}" class="img-responsive img-circle" >
                         <h4>Sebastian Slomski</h4>
                         <p class="text-muted">Co-Founder, Head of Development</p>
                         <ul class="list-inline social-buttons">
@@ -317,7 +317,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/vitus-neumayer.jpg" class="img-responsive img-circle" alt="">
+                        <img src="{{ url_for('static', filename='img/team/vitus-neumayer.jpg') }}" class="img-responsive img-circle" >
                         <h4>Vitus Neumayer</h4>
                         <p class="text-muted">Lead Designer</p>
                     </div>
@@ -332,22 +332,22 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/uxebu-logo.jpg" class="img-responsive img-centered" alt="">
+                        <img src="{{ url_for('static', filename='img/logos/uxebu-logo.jpg') }}" class="img-responsive img-centered" >
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/catenate-logo.jpg" class="img-responsive img-centered" alt="">
+                        <img src="{{ url_for('static', filename='img/logos/catenate-logo.jpg') }}" class="img-responsive img-centered" >
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/lulu-logo.jpg" class="img-responsive img-centered" alt="">
+                        <img src="{{ url_for('static', filename='img/logos/lulu-logo.jpg') }}" class="img-responsive img-centered" >
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/planit-logo.jpg" class="img-responsive img-centered" alt="">
+                        <img src="{{ url_for('static', filename='img/logos/planit-logo.jpg') }}" class="img-responsive img-centered" >
                     </a>
                 </div>
             </div>
@@ -431,7 +431,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Cutters Lounge Product Website</h2>
                             <p class="item-intro text-muted"></p>
-                            <img class="img-responsive" src="img/portfolio/cutterslounge-website.png" alt="">
+                            <img class="img-responsive" src="{{ url_for('static', filename='img/portfolio/cutterslounge-website.png') }}" >
                             <p>
                                 <strong>Cutters Lounge</strong>: Appointment management, made easy
                                 <br>
@@ -466,7 +466,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Cutters Lounge Web App</h2>
                             <p class="item-intro text-muted"></p>
-                            <img class="img-responsive" src="img/portfolio/cutterslounge-app.png" alt="">
+                            <img class="img-responsive" src="{{ url_for('static', filename='img/portfolio/cutterslounge-app.png') }}" >
                             <p>
                                 <strong>Cutters Lounge</strong>: Appointment management, made easy
                                 <br>
@@ -497,7 +497,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Cutters Lounge Mobile Web App</h2>
                             <p class="item-intro text-muted"></p>
-                            <img class="img-responsive" src="img/portfolio/cutterslounge-mobile.png" alt="">
+                            <img class="img-responsive" src="{{ url_for('static', filename='img/portfolio/cutterslounge-mobile.png') }}" >
                             <p>
                                 <strong>Cutters Lounge</strong>: Appointment management, made easy
                                 <br>
@@ -521,13 +521,9 @@
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="{{ url_for('static', filename='js/classie.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/cbpAnimatedHeader.js') }}"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <script src="js/agency.js"></script>
+    <script src="{{ url_for('static', filename='js/agency.js') }}"></script>
 </body>
 </html>
